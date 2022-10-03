@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Calculadora</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="estilos.css">
+<script src="calculadora.js">
+</script>
+</head>
+<body>
+<h3>Calculadora - Fidel Peguero 2021-0620</h3>
+<div>
+<label for="Nnumero"> Introduzca primer numero </label>
+<input type="number" id="num1" name="primer numero"placeholder="Introduzca el primer numero...">
+<label for="Nnumero"> Introduzca segundo numero </label>
+<input type="number" id="num2" name="segundo numero"placeholder="Introduzca el segundo numero...">
+
+<label for="operacion"> Operacion</label>
+<select id="operacion" name="operacion">
+ <option>Suma</option>
+      <option>Resta</option>
+      <option>Multiplicacion</option>
+     <option>Division</option> 
+     </select>
+  <input type="text" class="noVisible" name="calcular" id="resp" style="display:none;">
+    <input class="botones" type="button" onclick="calcular()" value="Calcular" id="b1">
+  <input class="botones" type="button" onclick="confirETodo()" value="Eliminar todo" id="b2">
+
+</div>
+<br>
+<table class="table" id="Table">
+<thead>
+<tr>
+<th scope="col">Operacion</th>
+<th scope="col">Resultado</th>
+</tr>
+
+
+</thead>
+
+</table>
+<tbody id="calculo">
+
+</tbody>
+<textarea name="" id="cal"  style="display:none;"
+ cols="30"rows="10">
+<tr>
+<td>{operacion}</td>
+<td>{Resultado}</td>
+</tr>
+</textarea>
+</body>
+</html>
